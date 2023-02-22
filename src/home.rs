@@ -2,20 +2,28 @@ use yew::prelude::*;
 
 #[function_component]
 pub fn App() -> Html {
-    html! {
-        <div class="container">
-        <div id="navigation-bar">
-          <nav>
-            <ul>
-              <li><img src="res/pplogo.png" alt="logo" /></li>
-              
-            </ul>
-          </nav>
-        </div>
-      
-        <div class="content">
-          
-        </div>
-      </div>
-   }
+  html! {
+    <main class="container">
+
+      <nav class="navbar">
+        <ul class="list">
+          <li><p id="logoimg">{"Propulsion Path"}</p></li>
+          <li><a href="#">{"About"}</a></li>
+          <li><a href="#">{"Products"}</a></li>
+          <li><a href="#">{"Contact"}</a></li>
+        </ul>
+      </nav>
+
+      <section class="main-content">
+        <div></div>
+      </section>
+
+      <footer class="footer">
+        <ul class="footer-info">
+        <li><a href="#">{"Contact"}</a></li>
+        </ul>
+      </footer>
+
+    </main>
+  }
 }
